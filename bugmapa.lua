@@ -12,22 +12,21 @@ end
 
 consoleModule = modules.game_console
 macro(200, 'Bug Map', function() 
-    -- Remove delay entre as ações
     if modules.corelib.g_keyboard.isKeyPressed('w') and not consoleModule:isChatEnabled() then
-        checkPos(0, -90) -- Passo muito maior para frente
+        checkPos(0, -90) 
     elseif modules.corelib.g_keyboard.isKeyPressed('e') and not consoleModule:isChatEnabled() then
-        checkPos(90, -100) -- Passo maior diagonal
+        checkPos(90, -100) 
     elseif modules.corelib.g_keyboard.isKeyPressed('d') and not consoleModule:isChatEnabled() then
-        checkPos(90, 0) -- Passo ainda mais largo para a direita
+        checkPos(90, 0) 
     elseif modules.corelib.g_keyboard.isKeyPressed('c') and not consoleModule:isChatEnabled() then
-        checkPos(0, 90) -- Passo maior diagonal
+        checkPos(0, 90) 
     elseif modules.corelib.g_keyboard.isKeyPressed('s') and not consoleModule:isChatEnabled() then
-        checkPos(0, 90) -- Passo muito maior para trás
+        checkPos(0, 90) 
     elseif modules.corelib.g_keyboard.isKeyPressed('z') and not consoleModule:isChatEnabled() then
-        checkPos(0, 90) -- Passo maior diagonal
+        checkPos(0, 90) 
     elseif modules.corelib.g_keyboard.isKeyPressed('a') and not consoleModule:isChatEnabled() then
-        checkPos(0, 90) -- Passo mais largo para a esquerda
+        checkPos(0, 90) 
     elseif modules.corelib.g_keyboard.isKeyPressed('q') and not consoleModule:isChatEnabled() then
-        checkPos(0, -90) -- Passo maior diagonal
+        checkPos(0, -90) 
     end
 end)

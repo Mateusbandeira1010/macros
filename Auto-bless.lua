@@ -16,9 +16,9 @@ Panel
 ]], g_ui.getRootWidget())
 
 local BLESS_COMMAND = "!bless"
-local BLESS_MESSAGE = "You are already blessed" -- Blessing message (Below Tibia 10)
-local DELAY_LOGOUT = 10000 -- Time in milliseconds before logoff
-local AUTO_LOGOUT = true -- true - log out character | false - do not log out character
+local BLESS_MESSAGE = "You are already blessed" 
+local DELAY_LOGOUT = 10000 
+local AUTO_LOGOUT = true 
 
 local function scheduleLogout()
   schedule(DELAY_LOGOUT, function()
